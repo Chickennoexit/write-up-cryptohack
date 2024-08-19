@@ -1,0 +1,51 @@
+ASCII
+
+Với bài này và hint là sử dụng chr() để chuyển từ mã ascii thành kí tự và ord() là chuyển từ kí tự sang ascii.
+[99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
+Chúng ta có thể code như sau:
+data1 = [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
+for i in data1:
+    print(chr(i), end='')
+Giải thích:
+Với data1 là các số đề bài cho, for i in data là vòng lặp để chuyển từng số sang kí tự, print(chr(i),end='') là chuyển sang kí tự bằng cách sử dụng hàm chr(), end='' là để in các kí tự lên một dòng. Nếu không có dòng này thì kết quả sẽ là:
+
+c
+r
+y
+p
+t
+o
+{
+A
+S
+C
+I
+I
+_
+p
+r
+1
+n
+t
+4
+b
+l
+3
+}
+
+Kết quả:
+Dòng code này để chuyển các số trong bảng mã ascii thành kí tự. khi chạy chương trình thì nó ra kết quả là:
+crypto{ASCII_pr1nt4bl3}
+
+Hãy thử làm ngược lại:
+Ở bài trên thì chúng ta đã dùng hàm chr() để chuyển đổi số thành kí tự. Bây giờ hãy sử dụng hàm ord() để đổi lại văn bản thành mã số:
+```python
+text = "crypto{ASCII_pr1nt4bl3}" 
+print('\n')
+for i in text:
+    print(ord(i),end='')
+```
+Giải thích:
+Text là để gán chuỗi kí tự trong dấu "",for i in text để gọi vòng lặp, print(ord(i)) là để chuyển các kí tự trong text thành số bằng cách sử dụng hàm ord(), end='' là để các số nằm hết trên 1 dòng
+Và kết quả chúng ta thu được là:
+9911412111211611112365836773739511211449110116529810851125
