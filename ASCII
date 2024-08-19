@@ -1,5 +1,5 @@
 ASCII
-
+![feature-image](https://hackmd.io/_uploads/B1lxWj-rC.png)
 Với bài này và hint là sử dụng chr() để chuyển từ mã ascii thành kí tự và ord() là chuyển từ kí tự sang ascii.
 [99, 114, 121, 112, 116, 111, 123, 65, 83, 67, 73, 73, 95, 112, 114, 49, 110, 116, 52, 98, 108, 51, 125]
 Chúng ta có thể code như sau:
